@@ -1,0 +1,15 @@
+<template name="answerForm">
+    <div class="form-group answer-group">
+        <div class="col-xs-2">
+            <label for="answer{{ answer._index }}" class="">{{ _ "answers.text" }} {{ indexForLabel answer._index }}</label>
+        </div>
+        <div class="col-xs-9">
+            <input type="text" name="answer" id="answer{{ answer._index }}" class="form-control"
+                   placeholder="{{ _ "answers.placeholder" }}" value="{{ answer.text }}">
+        </div>
+        <a href="#" class="remove btn btn-primary ">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </a>
+    </div>
+</template>
+

@@ -1,0 +1,18 @@
+<template name="pollVote">
+    <h3>{{ _ "votes.header" }}</h3>
+    <div class="poll-vote well well-lg col-xs-6" data-id="{{ poll._index }}">
+        <h4 class="question">{{ poll.question }}</h4>
+        <fieldset class="answers">
+            {{# each answer in indexedArray poll.answers }}
+                <div class=" form-gruop">
+                    <input type="radio" name="answer" class="vote-radio" value="{{ answer._id }}"
+                           id="poll{{ poll._index }}_answer{{ answer._index }}">
+                    <label for="poll{{ poll._index }}_answer{{ answer._index }}">{{ answer.text }}</label>
+                </div>
+            {{/ each }}
+            <div class="vote-button">
+                <button type="submit" class="vote-button btn btn-primary">{{_ 'polls.vote'}}</button>
+            </div>
+        </fieldset>
+    </div>
+</template>

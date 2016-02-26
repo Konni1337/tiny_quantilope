@@ -1,0 +1,7 @@
+<template name="vote">
+    {{# each poll in indexedArray polls }}
+        {{> pollVote poll = poll }}
+    {{ else }}
+        {{ _ 'polls.none' }}
+    {{/ each }}
+</template>

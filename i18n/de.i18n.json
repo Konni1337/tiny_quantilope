@@ -1,0 +1,32 @@
+{
+  "answers": {
+    "default_text": "Antwort#",
+    "more": "Mehr hinzufügen",
+    "placeholder": "Antwort",
+    "text": "Antwort"
+  },
+  "app": {
+    "loading": "Lädt...",
+    "not_found": "404 Seite nicht gefunden.",
+    "sign_in": "Du musst eingeloggt sein um das zu tun.",
+    "title": "Tiny quantilope"
+  },
+  "navigation": {
+    "vote": "Abstimmen",
+    "polls": "Umfrage",
+    "results": "Ergebnisse"
+  },
+  "polls": {
+    "change_warning": "Das Ändern der Umfrage setzt alle Stimmen zurück!",
+    "header": "Ändern der Umfrage",
+    "no_answer_selected": "Bitte wähle eine Antwort.",
+    "none": "Derzeit keine Umfragen vorhanden.",
+    "question": "Frage",
+    "question_needed": "Bitte eine Frage eingeben...",
+    "save": "Speichern",
+    "vote": "Abstimmen"
+  },
+  "votes": {
+    "header": "Stimme ab!"
+  }
+}

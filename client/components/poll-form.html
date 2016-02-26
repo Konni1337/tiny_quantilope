@@ -1,0 +1,33 @@
+<template name="pollForm">
+    <h3>{{ _ "polls.header" }}</h3>
+
+    <div class="alert alert-warning" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        {{ _ "polls.change_warning" }}
+    </div>
+
+    <form id="poll-form">
+        <div class="form-group row">
+            <div class="col-xs-2">
+                <label for="question">{{_ "polls.question" }}</label>
+            </div>
+            <div class="col-xs-10">
+                <input type="text" name="question" id="question" class="form-control" placeholder="Your Question"
+                       value="{{ poll.question }}">
+            </div>
+        </div>
+
+        <hr/>
+        <div class="form-group row">
+            <fieldset id='answers'>
+                {{# each answer in indexedArray poll.answers }}
+                    {{> answerForm answer = answer }}
+                {{/ each }}
+            </fieldset>
+        </div>
+        <a href="#" id="more" class="btn btn-primary">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+            <span>{{ _ "answers.more" }}</span>
+        </a>
+    </form>
+</template>

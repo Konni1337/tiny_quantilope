@@ -1,0 +1,32 @@
+{
+  "answers": {
+    "default_text": "Answer#",
+    "more": "Add more",
+    "placeholder": "Answer",
+    "text": "Answer"
+  },
+  "app": {
+    "loading": "Loading...",
+    "not_found": "404 Page not found.",
+    "sign_in": "You need to be logged in to do that.",
+    "title": "Tiny quantilope"
+  },
+  "navigation": {
+    "vote": "Vote",
+    "polls": "Poll",
+    "results": "Result"
+  },
+  "polls": {
+    "change_warning": "Changing the poll resets all votes!",
+    "header": "Change the Poll",
+    "no_answer_selected": "Please select an answer.",
+    "none": "There are no polls currently available.",
+    "question": "Question",
+    "question_needed": "Please enter a question...",
+    "save": "Save",
+    "vote": "Vote"
+  },
+  "votes": {
+    "header": "Vote!"
+  }
+}
